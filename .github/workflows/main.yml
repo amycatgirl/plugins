@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Check for the filename
       run: |
-        find ./plugins/*/ -type f -name "*.plugin.js"
+        find -e ./plugins/*/ -type f -name "*.plugin.js"
         done
     - name: Commit files
       run: |
