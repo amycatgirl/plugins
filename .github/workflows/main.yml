@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Check for the filename
       run: |
-        find -e ./plugins/*/ -type f -name "*.plugin.js"
+        find ./plugins/*/ -type f -name "*.plugin.js"
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
