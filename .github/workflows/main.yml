@@ -4,15 +4,13 @@ on:
     branches: [ main ]
     paths: 'plugins/*'
 jobs:
-  docit:
+  checks:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@master
     - name: Check for the filename
       run: |
         find -e ./plugins/*/ -type f -name "*.plugin.js"
-        done
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
