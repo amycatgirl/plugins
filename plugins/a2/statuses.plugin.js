@@ -7,11 +7,11 @@ state.plugins.add({
         console.log('[ A2 | STATUS ] Plugin init!');
         try {
           // Status text to loop through (in order, yes);
-            xstatus = ["❤️‍🔥 넌 내가 저지른 유일한 실수였어", "❤️‍🔥 Þú varst einu mistökin sem ég gerði", "❤️‍🔥 Fuiste el único error que cometí", "❤️‍🔥 You were the only mistake I made"];
+            let xstatus = ["❤️‍🔥 넌 내가 저지른 유일한 실수였어", "❤️‍🔥 Þú varst einu mistökin sem ég gerði", "❤️‍🔥 Fuiste el único error que cometí", "❤️‍🔥 You were the only mistake I made"];
             let i = 0;
             setInterval(async () => {
                 const presence = "Focus"
-                if (i >= x.status.length) i = 0;
+                if (i >= xstatus.length) i = 0;
                 const statusText = xstatus[i];
 
                 await fetch(
