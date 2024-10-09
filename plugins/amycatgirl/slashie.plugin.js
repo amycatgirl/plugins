@@ -1,0 +1,2 @@
+state.plugins.add({"namespace":"amycatgirl","id":"slashie","entrypoint":"()=>{function a(){var A=new Promise(resolve=>setTimeout(()=>resolve(window.controllers.client.getAvailableClient()),2500));A.then(c=>c.on(\"message\",m=>m.author.id==c.user.id&&m.content.startsWith(\"/me\")&&m.edit({content:`*${(c.user.display_name??c.user.username).trim()} ${m.content.substring(4).trim()}*`})))}a()};","version":"6"})
+
